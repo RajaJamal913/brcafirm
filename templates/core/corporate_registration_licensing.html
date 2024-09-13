@@ -1,0 +1,78 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+  <main id="main">
+    <!-- Corporate Registration Licensing Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <header class="section-header text-center mb-5">
+          <h3>Corporate Registration & Licensing</h3>
+          <img src="{% static 'img/company.jpg' %}" alt="Corporate Registration" class="img-fluid rounded shadow d-block mx-auto mb-4" style="max-width: 500px;">
+          <p class="lead">Navigating the legal requirements of corporate registration and licensing is essential for businesses aiming to establish a solid foundation and operate compliantly. At BRCA Consultancy, we offer comprehensive services tailored to expedite the process, ensuring businesses can focus on their core operations with confidence.</p>
+        </header>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+      <div class="container">
+        <ul class="list-unstyled">
+          <li class="mb-4">
+            <h4><b>Consultation and Assessment</b></h4>
+            <p>Our experienced consultants provide personalized consultations to assess the specific needs and requirements of your business. We offer insights into the registration and licensing process, guiding you through the necessary steps to achieve compliance.</p>
+          </li>
+          <li class="mb-4">
+            <h4><b>Entity Selection and Formation</b></h4>
+            <p>We assist businesses in selecting the most suitable legal entity structure based on their goals, size, and industry. Our team facilitates the formation of corporations, limited liability companies (LLCs), partnerships, and other business entities, ensuring adherence to regulatory standards.</p>
+          </li>
+          <li class="mb-4">
+            <h4><b>Documentation Preparation</b></h4>
+            <p>We streamline the preparation and submission of required documentation for corporate registration and licensing. Our experts ensure accuracy and completeness in paperwork, minimizing delays and errors in the application process.</p>
+          </li>
+          <li class="mb-4">
+            <h4><b>Regulatory Compliance</b></h4>
+            <p>Staying compliant with regulatory requirements is essential for corporate entities. We keep businesses updated on relevant laws and regulations, assisting in obtaining the necessary licenses, permits, and certifications to operate legally and ethically.</p>
+          </li>
+          <li>
+            <h4><b>Post-Incorporation Support</b></h4>
+            <p>Our commitment to your success extends beyond registration and licensing. We provide ongoing support and guidance to help businesses navigate post-incorporation requirements, such as annual filings, compliance audits, and regulatory updates.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Company Registration in Pakistan Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h1 class="text-center mb-4"><b>Company Registration in Pakistan</b></h1>
+        <p class="lead">
+          Establishing a business in Pakistan involves several legal procedures and requirements. At BRCA Consultancy, we offer comprehensive company registration services tailored to simplify the process, ensuring entrepreneurs can focus on their business goals with confidence.
+        </p>
+        <p>
+          Our seasoned advisors offer tailored consultations to understand your business objectives thoroughly and lead you through the company registration process. We analyze your specific requirements and provide insights into the legal prerequisites and procedures involved.
+        </p>
+        <p>
+          We aid in identifying the most appropriate legal structure for your enterprise, whether it's a sole proprietorship, partnership, limited liability company (LLC), or corporation. Our team assists in determining the optimal framework based on your business objectives, ownership preferences, and liability considerations.
+        </p>
+        <p>
+          We simplify the process of gathering and submitting necessary documentation for company registration. Our proficient professionals ensure precision and thoroughness in paperwork, minimizing delays and inaccuracies in the application process. We manage all essential filings with relevant government authorities on your behalf.
+        </p>
+        <p>
+          Adherence to regulatory requirements is paramount for business prosperity. We keep you informed about the latest laws and regulations governing company registration in Pakistan. Our team aids in securing the requisite licenses, permits, and certifications to operate in compliance with legal and ethical standards.
+        </p>
+        <p>
+          Our dedication to your success doesn't end with company registration. We offer continuous assistance and guidance to navigate post-registration obligations, including tax registration, compliance filings, and adherence to corporate governance norms.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action" class="py-5 text-white bg-primary wow fadeIn">
+      <div class="container text-center">
+        <h3>Get in Touch</h3>
+        <p class="lead">Partner with BRCA Consultancy to navigate the complexities of corporate registration and licensing with confidence. Let us be your trusted partner in achieving compliance and unlocking opportunities for growth and success.</p>
+        <a class="cta-btn " href="{% url 'core:index'%}#contact">Contact us Today &rarr;</a>
+      </div>
+    </section>
+  </main>
+{% endblock content %}

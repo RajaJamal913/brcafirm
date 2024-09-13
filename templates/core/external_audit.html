@@ -1,0 +1,73 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+  <main id="main">
+    <section id="about" class="py-5">
+      <div class="container">
+        <header class="section-header text-center">
+          <h3>External Audit</h3>
+          <p>
+            We design a customized audit plan that concentrates on the business areas significant to your financial statements and that are critical to your risk profile. Understanding the critical importance of external audits in ensuring transparency, accuracy, and compliance within your organization. Our dedicated team of audit professionals specializes in providing comprehensive external audit services tailored to meet the unique needs of your business.
+          </p>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <img src="{% static 'img/externalaudit.jpg' %}" alt="External Audit" class="img-fluid rounded shadow-lg custom-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4">Our External Audit Services Include:</h3>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            Financial Statement Audits: Our experienced auditors conduct thorough examinations of your financial statements to provide assurance on their accuracy, completeness, and compliance with applicable accounting standards and regulations.
+          </li>
+          <li class="mb-3">
+            Compliance Audits: We help ensure that your organization is compliant with relevant laws, regulations, and industry standards by conducting comprehensive compliance audits tailored to your specific requirements.
+          </li>
+          <li class="mb-3">
+            Operational Audits: Our operational audits focus on evaluating the efficiency and effectiveness of your organization's internal controls, processes, and procedures to identify areas for improvement and risk mitigation.
+          </li>
+          <li class="mb-3">
+            Specialized Audits: In addition to standard audit services, we offer specialized audits tailored to specific industries or areas of focus, such as IT audits, forensic audits, and performance audits.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="call-to-action" class="py-5 bg-light text-center">
+      <div class="container">
+        <h3 class="mb-4">Get in Touch</h3>
+        <p class="mb-4">
+          Partner with BRCA Consultancy for reliable, efficient, and insightful external audit services. Contact us today to learn more about how we can assist you in meeting your audit needs and achieving your business objectives. Let us help you navigate the complexities of external audits with confidence and ease.
+        </p>
+        <a class="cta-btn " href="{% url 'core:index'%}#contact">Contact us Today &rarr;</a>
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+<style>
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cta-btn {
+    padding: 10px 20px; /* Adds padding to the button */
+    font-size: 1.1rem; /* Adjusts font size */
+    text-transform: uppercase; /* Capitalizes button text */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+
+  .cta-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+</style>

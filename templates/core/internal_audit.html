@@ -1,0 +1,66 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+  <main id="main">
+    <section id="about" class="py-5">
+      <div class="container">
+        <header class="section-header text-center mb-4">
+          <h3>Internal Audit</h3>
+          <p>
+            Internal auditing is a crucial component of corporate governance, risk management, and internal controls within an organization. At BRCA Consultancy, we specialize in providing strategic internal auditing solutions designed to enhance operational efficiency, mitigate risks, and safeguard organizational assets.
+          </p>
+        </header>
+        <div class="text-center mb-4">
+          <img src="{% static 'img/internalaudit.jpg' %}" alt="Internal Audit" class="img-fluid rounded shadow-lg custom-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4">Our Internal Audit Services Include:</h3>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            Risk Assessment and Management: We conduct comprehensive risk assessments to identify and prioritize key risks facing your organization. Our internal audit team works closely with management to develop risk mitigation strategies and internal control frameworks tailored to your specific business objectives.
+          </li>
+          <li class="mb-3">
+            Process Improvement: Our internal auditors analyze your organization's processes and procedures to identify inefficiencies, bottlenecks, and areas for improvement. We provide actionable recommendations to streamline operations, enhance productivity, and drive cost savings.
+          </li>
+          <li class="mb-3">
+            Compliance Monitoring: We help ensure that your organization complies with relevant laws, regulations, and industry standards by conducting regular compliance audits. Our internal audit team monitors compliance with internal policies and procedures, as well as external regulatory requirements, to mitigate legal and regulatory risks.
+          </li>
+          <li class="mb-3">
+            Fraud Detection and Prevention: We assist in detecting and preventing fraud by conducting forensic audits, investigating suspicious activities, and implementing fraud prevention measures. Our internal audit team helps strengthen internal controls and establish a culture of integrity and accountability within your organization.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="call-to-action" class="py-5 bg-light text-center">
+      <div class="container">
+        <h3 class="mb-4">Get in Touch</h3>
+        <p class="mb-4">
+          Partner with GRS Consultancy for strategic internal auditing solutions that add value to your organization. Contact us today to learn more about how we can assist you in strengthening your internal controls, mitigating risks, and achieving your business objectives through effective internal auditing.
+          Let us help you optimize your organization's performance and achieve sustainable growth through strategic internal auditing.
+        </p>
+        <a class="cta-btn " href="{% url 'core:index'%}#contact">Contact us Today &rarr;</a>
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+<style>
+  .custom-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    width: 90%; /* Adjust width as needed for better appearance */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers its container */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the image behaves like a block element */
+  }
+  .cta-btn {
+    padding: 10px 20px; /* Adds padding to the button */
+    font-size: 1.1rem; /* Adjusts font size */
+    text-transform: uppercase; /* Optional: capitalizes button text */
+    border-radius: 5px; /* Rounded corners for the button */
+  }
+</style>

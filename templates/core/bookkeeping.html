@@ -1,0 +1,72 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+  <section id="about" class="py-5">
+    <div class="container">
+
+      <header class="section-header text-center mb-5">
+        <h3>Book Keeping</h3>
+        <p class="lead mb-4">
+          Bookkeeping is a crucial element of business accounting, involving a substantial project that requires time and expertise.
+          The implementation of a fully Computerized Accounting System can be an extensive process, which may be prolonged based on the complexity and scale of the business. BRCA Consultancy provides exceptional accounting and bookkeeping services tailored to various business structures and industries.
+        </p>
+        <img src="{% static 'img/bookkeeping.jpg' %}" alt="Book Keeping" class="img-fluid rounded shadow-lg custom-image">
+      </header>
+      
+      <section class="text-center">
+        <p>
+          Our objective is to relieve businesses of the responsibility of managing payroll and bank reconciliations, allowing them to concentrate on growth. We offer comprehensive support for all bookkeeping requirements, from recruiting employees to producing financial reports.
+        </p>
+        <p>
+          Our team of skilled accountants at BRCA Consultancy develops personalized bookkeeping packages to suit your specific needs. From overseeing your company’s accounts to managing payroll, we deliver outsourced bookkeeping services at competitive rates. Trust BRCA Consultancy to protect your sensitive business data, ensuring maximum privacy and security.
+        </p>
+        <p>
+          Collaborate with BRCA Consultancy today for exceptional outsourced bookkeeping services, empowering your business to excel in the ever-changing marketplace.
+        </p>
+      </section>
+      
+      <section class="mt-5">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <img src="{% static 'img/book_keep.jpg' %}" alt="Finance and Accounting" class="img-fluid rounded shadow-lg custom-image">
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h3>
+              At BRCA, we offer a comprehensive range of finance and accounting support services covering the entire finance value chain.
+              Our specialized Finance & Accounting solutions encompass:
+            </h3>
+            <ul class="list-unstyled mt-3">
+              <li><i class="bi bi-check-circle text-success"></i> Implementation of accounting systems like QuickBooks, Tally, SAP, and Xero, tailored to your specific requirements.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Development of charts of accounts aligned with your reporting needs to ensure precise financial tracking.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Preparation of annual and periodic financial statements in accordance with International Financial Reporting Standards (IFRS), ensuring regulatory compliance.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Design and implementation of reporting mechanisms to facilitate effective management decision-making and enhance operational efficiency.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Establishment and management of fixed assets registers to optimize asset tracking and management.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Management of accounts receivable and payable processes to streamline cash flow and liquidity management.</li>
+              <li><i class="bi bi-check-circle text-success"></i> Analysis and processing of firm/employee expenses on a periodic basis, culminating in comprehensive reports for informed decision-making.</li>
+            </ul>
+            <p class="mt-3">
+              Choose BRCA for tailored finance and accounting solutions designed to streamline operations and drive business success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+<style>
+  .custom-image {
+    width: 100%; /* Ensures the image spans the full width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container area without distortion */
+  }
+  
+  .section-header img {
+    max-height: 400px; /* Limits the height to avoid overly large images */
+    object-fit: cover; /* Ensures the image covers the space nicely */
+  }
+</style>
+
+{% endblock content %}

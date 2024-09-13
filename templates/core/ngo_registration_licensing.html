@@ -1,0 +1,75 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+  <!-- NGO Registration Licensing Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <header class="section-header text-center mb-4">
+        <h3>NGO Registration Licensing</h3>
+        <h2>Facilitating NGOs with Registration and Licensing Services</h2>
+        <p>
+          Registering and obtaining licensing for Non-Governmental Organizations (NGOs) is a crucial step towards initiating impactful social work and community development projects. At BRCA Consultancy, we offer comprehensive services tailored to simplify the process, ensuring NGOs can focus on their core mission without bureaucratic hurdles.
+        </p>
+        <p>
+          BRCA Consultancy specializes in the registration of Non-Profit Organizations (NPOs) or Non-Governmental Organizations (NGOs) in Pakistan. We help organizations get registered with the following authorities:
+          <br>• Security Exchange Commission of Pakistan (Section 42 License)
+          <br>• The Voluntary Social Welfare Agencies (Registration And Control) Ordinance 1961
+          <br>• The Societies Registration Act, 1860
+          <br>• The Trust Act, 1882
+          <br>Additionally, we assist organizations in meeting the licensing criteria for Section 42 registered companies.
+        </p>
+      </header>
+    </div>
+  </section>
+
+<!-- PCP Certification Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4"><b>Navigating PCP Certification</b></h2>
+    <img src="{% static 'img/ngo.jpg' %}" alt="PCP Certification" class="img-fluid rounded shadow d-block mx-auto mb-4">
+    <p>
+      Obtaining Professional Certification in Project Management (PCP) is a significant milestone for professionals seeking to enhance their project management skills and credibility. At GRS Consultancy, we provide comprehensive support to individuals and organizations looking to pursue PCP certification, guiding them through every step of the process with expertise and efficiency.
+    </p>
+    <ul>
+      <li>Drafting application for certification from Pakistan Center for Philanthropy (PCP)</li>
+      <li>Drafting of Policies and Procedures as per the standards of Pakistan Center for Philanthropy (PCP)</li>
+      <li>Guidance to maintain records/files under the standards of Pakistan Center for Philanthropy (PCP)</li>
+      <li>Assistance in replying to queries for evaluation during the certification process from Pakistan Center for Philanthropy (PCP)</li>
+      <li>Application for renewal of certification from Pakistan Center for Philanthropy (PCP)</li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Our Role Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4"><b>Our Role For it:</b></h2>
+      <p>
+        <b>Consultation and Assessment:</b> Our experienced consultants offer personalized consultations to assess your eligibility and readiness for PCP certification. We provide insights into the certification process, requirements, and benefits, helping you make informed decisions.
+      </p>
+      <p>
+        <b>Application Assistance:</b> We assist individuals in completing and submitting their PCP certification applications, ensuring accuracy and compliance with certification guidelines. Our team offers guidance on documenting project management experience, education, and professional development activities.
+      </p>
+      <p>
+        <b>Exam Preparation:</b> Prepare for the PCP certification exam with confidence with our exam preparation resources and support. We offer study materials, practice exams, and coaching to help you master key project management concepts and pass the exam successfully.
+      </p>
+      <p>
+        <b>Project Management Training:</b> Enhance your project management skills and knowledge through our comprehensive training programs. Our courses cover essential project management principles, methodologies, and best practices, preparing you to excel in your PCP certification journey and beyond.
+      </p>
+      <p>
+        <b>Post-Certification Support:</b> Our commitment to your success extends beyond certification. We provide ongoing support and resources to help you maintain your PCP certification, stay updated on industry trends, and advance your career in project management.
+      </p>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="call-to-action" class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h3 class="mb-3">Get in Touch</h3>
+      <p class="mb-4">Partner with BRCA Consultancy to navigate the complexities of NGO registration and licensing seamlessly. Let us be your trusted partner in making a positive impact on society while ensuring compliance with regulatory standards.</p>
+      <a class="cta-btn" href="{% url 'core:index'%}#contact">Contact us Today</a>
+    </div>
+  </section>
+</main>
+{% endblock %}

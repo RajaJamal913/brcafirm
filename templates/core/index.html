@@ -1,0 +1,378 @@
+{% extends "partials\base.html" %}
+{% load static %}
+{% block content%}
+  <main id="main">
+    <section id="intro">
+      <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+  
+          <ol class="carousel-indicators"></ol>
+  
+          <div class="carousel-inner" role="listbox">
+  
+              <div class="carousel-item active" style="background-image: url('{% static 'img/intro-carousel/1.jpg' %}');">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Financial Clarity</h2>
+                  <p>Welcome to Our Financial Hub. Explore our range of accounting and taxation solutions today</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url('{% static 'img/intro-carousel/2.jpg' %}');">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Financial & Auditing Services</h2>
+                  <p>An audit is not just about numbers; it's about integrity, accuracy, and trust.</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url('{% static 'img/intro-carousel/3.jpg' %}');">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Registration & Licensing</h2>
+                  <p>In the realm of business, registration and licensing are the cornerstones of legitimacy.</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url('{% static 'img/intro-carousel/4.jpg' %}');">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Taxation with Experise & Precision</h2>
+                  <p>From compliance to optimization, our taxation services cover every aspect of your financial needs</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url('{% static 'img/intro-carousel/5.jpg' %}');">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2>Buisness Advisory</h2>
+                  <p>From startups to established enterprises, our advisory services pave the way for success</p>
+                  <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+  
+          <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+  
+        </div>
+      </div>
+    </section>
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <style>
+      #featured-services {
+        padding: 60px 0;
+      }
+    
+      #featured-services .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      #featured-services .box {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+    
+      #featured-services .box i {
+        font-size: 48px;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+    
+      #featured-services .box .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+      }
+    
+      #featured-services .box .title a {
+        text-decoration: none;
+        color: White;
+        transition: color 0.3s ease;
+      }
+    
+      #featured-services .box .title a:hover {
+        color: white;
+      }
+    
+      #featured-services .box .description {
+        font-size: 16px;
+        color: #555;
+      }
+  
+    </style>
+    
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 box">
+            <i class="ion-ios-bookmarks-outline"></i>
+            <h4 class="title"><a href="">Your Work Our Priority</a></h4>
+            <p class="description">Where Numbers Speak Volumes: Your Trusted Accounting Advisors. Welcome to our hub of financial expertise!</p>
+          </div>
+    
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-stopwatch-outline"></i>
+            <h4 class="title"><a href="">Save Time </a></h4>
+            <p class="description">Our service streamlines processes, giving you the freedom to focus on what truly matters – growing your business</p>
+          </div>
+    
+          <div class="col-lg-4 box">
+            <i class="ion-ios-heart-outline"></i>
+            <h4 class="title"><a href="">Customer Relation</a></h4>
+            <p class="description">Every interaction is an opportunity to build trust, loyalty, and lasting connections.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #featured-services -->
+    
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about-us" style="padding: 40px 0; margin: 20px 0;">
+      <div class="container">
+    
+        <header class="section-header" style="margin-bottom: 30px;">
+          <h3>About Us</h3>
+          <p>At BRCA Consultancy, we are dedicated to facilitating our clients' growth and optimizing their financial standing. Our extensive client portfolio spans nonprofit organizations, corporate entities, businesses, and individuals. Our expertise encompasses a wide range of financial services, including audit, tax consulting, outsourced accounting, and risk advisory. Beyond these specialties, we provide comprehensive consultation on various 
+            financial aspects, ensuring tailored solutions for every client.</p>
+        </header>
+    
+        <div class="row about-cols">
+    
+          <div class="col-md-4 wow fadeInUp" style="margin-bottom: 30px;">
+            <div class="about-col" style="padding: 20px;">
+              <div class="img">
+                <img src="{% static 'img/about-mission.jpg' %}" alt="" class="img-fluid" style="margin-bottom: 15px;">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                With a focus on excellence and client-centricity, we strive to be the trusted partner
+                 that propels our clients towards sustained success and financial fulfillment."
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 30px;">
+            <div class="about-col" style="padding: 20px;">
+              <div class="img">
+                <img src="{% static 'img/about-plan.jpg' %}" alt="" class="img-fluid" style="margin-bottom: 15px;">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <p>
+                Empower our clients with exceptional financial guidance and support, enabling them to achieve 
+                their utmost potential and thrive in their endeavors. 
+              </p>
+            </div>
+          </div>
+    
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom: 30px;">
+            <div class="about-col" style="padding: 20px;">
+              <div class="img">
+                <img src="{% static 'img/about-vision.jpg' %}" alt="" class="img-fluid" style="margin-bottom: 15px;">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                Our vision is to be the premier leader in the financial consulting industry, renowned for our unwavering 
+                commitment to excellence, innovation, and client satisfaction. 
+              </p>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section><!-- #about -->
+    
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p>we offer a comprehensive suite of specialized financial services 
+            tailored to meet the diverse needs of our esteemed clientele. Our core services include:</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Audit Services:</a></h4>
+            <p class="description">We conduct thorough and meticulous audits to provide assurance on financial statements, 
+              ensuring compliance with regulatory requirements and industry standards</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Registration Services: </a></h4>
+            <p class="description">Our experienced professionals provide strategic guidance and innovative solutions to optimize tax efficiency, 
+              minimize liabilities, and make yor firm registered .</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+            <h4 class="title"><a href="">Outsourced Accounting:</a></h4>
+            <p class="description">We offer flexible and scalable outsourced accounting solutions,
+               enabling businesses to streamline their financial processes, enhance accuracy,
+                and focus on core operations.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+            <h4 class="title"><a href="">Risk Advisory:</a></h4>
+            <p class="description">Our dedicated risk management experts assist clients in identifying, assessing, 
+              and mitigating risks across their operations, safeguarding assets and promoting sustainable growth.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+            <h4 class="title"><a href="">Taxation Services:</a></h4>
+            <p class="description">
+              We offer a wide range of tax services including corporate and individual 
+              tax planning and compliance, as well as global projects that involve designing and
+               implementing tax strategies to help produce sustainable long-term tax savings</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-people-outline"></i></div>
+            <h4 class="title"><a href="">Objective:</a></h4>
+            <p class="description"> Our goal is to serve as a trusted partner, empowering our clients to make informed decisions
+               and achieve their financial objectives with confidence."</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Call To Action</h3>
+        <p> Ready to take control of your financial future? Contact GRS Consultancy today and 
+          discover how our tailored solutions can propel your business to new heights.
+           Whether you're seeking expert audit services, strategic tax consulting, 
+           streamlined outsourced accounting, or proactive risk advisory, 
+           our team is here to support your journey towards financial success. 
+           Don't wait another moment to unlock the full potential of your business
+           – reach out to us now and let's embark on this transformative partnership together..</p>
+        <a class="cta-btn" href="#">Call To Action</a>
+      </div>
+    </section><!-- #call-to-action -->
+
+
+      <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Feel free to contact us at any time!! </p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>3rd Floor OPTP, Spring North, Bahria Phase 7</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+923349449944">03349449944</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:Office@brcafirm.com">Office@brcafirm.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          {% if messages %}
+            {% for message in messages %}
+              <div id="sendmessage" class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+          <form action="{% url 'core:contact' %}" method="post" role="form" class="ContactForm">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" value="{{ form.name.value }}" required />
+                {% if form.name.errors %}
+                  <div class="validation">{{ form.name.errors }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" value="{{ form.email.value }}" required />
+                {% if form.email.errors %}
+                  <div class="validation">{{ form.email.errors }}</div>
+                {% endif %}
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" value="{{ form.subject.value }}" required />
+              {% if form.subject.errors %}
+                <div class="validation">{{ form.subject.errors }}</div>
+              {% endif %}
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required>{{ form.message.value }}</textarea>
+              {% if form.message.errors %}
+                <div class="validation">{{ form.message.errors }}</div>
+              {% endif %}
+            </div>
+            <div class="text-center">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+        
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+  {%endblock content%}

@@ -1,0 +1,122 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+<main id="main">
+  <section id="about" class="py-5">
+    <div class="container">
+
+      <header class="section-header text-center mb-5">
+        <h3>Audit Coordination</h3>
+        <p>At BRCA Consultancy, we're more than just financial advisors - we're your partners in success. 
+          With a commitment to excellence and a passion for innovation,
+           we specialize in providing a wide range of financial services tailored to meet the diverse
+            needs of our clients.</p>
+        <h5>Comprehensive Financial Solutions</h5>
+        <p>From audit and tax consulting to outsourced accounting and risk advisory, our team of seasoned professionals offers comprehensive solutions designed to help businesses and
+           individuals thrive in today's dynamic financial landscape.
+           With a keen focus on precision, integrity, and strategic thinking, we deliver actionable insights and practical guidance to drive sustainable growth and 
+           maximize financial performance.</p>
+        <h5>Trusted Expertise</h5>
+        <p>With years of industry experience and a track record of success, BRCA Consultancy has earned a reputation as a trusted advisor in the financial services industry.
+           Our team comprises highly skilled professionals with deep expertise across various domains, 
+          ensuring that our clients receive the highest level of service and support.</p>
+      </header>
+
+      <section id="about-auditsection" style="padding: 60px 0; background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 wow fadeInUp mb-4" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease-in-out; padding: 15px;">
+                    <div class="about-col p-4 border rounded bg-light" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <h2 class="title mb-3" style="font-size: 1.5rem; color: #343a40;">
+                            <a href="#" style="color: inherit; text-decoration: none;">Client-Centric Approach</a>
+                        </h2>
+                        <p style="color: #6c757d; font-size: 1rem; line-height: 1.6;">
+                            At BRCA, we understand that every client is unique, which is why we take a personalized approach to every engagement.
+                            Whether you're a small business looking to streamline your accounting processes or a multinational corporation seeking strategic tax planning advice, we take the time to understand your specific goals and challenges,
+                            and tailor our solutions accordingly.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 wow fadeInUp mb-4" data-wow-delay="0.2s" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease-in-out; padding: 15px;">
+                    <div class="about-col p-4 border rounded bg-light" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                        <div class="img mb-3" style="position: relative;">
+                            <img src="{% static 'img/audit.jpg' %}" alt="" class="img-fluid rounded" style="width: 100%; border-radius: 10px;">
+                            <div class="icon" style="position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.3); color: #fff; border-radius: 50%; padding: 10px;">
+                                <i class="ion-ios-eye-outline"></i>
+                            </div>
+                        </div>
+                        <h2 class="title mb-3" style="font-size: 1.5rem; color: #343a40;">
+                            <a href="#" style="color: inherit; text-decoration: none;">Are You Looking For?</a>
+                        </h2>
+                        <div class="intro-container">
+                            <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#introCarousel" data-slide-to="0" class="active" style="background-color: #007bff;"></li>
+                                    <li data-target="#introCarousel" data-slide-to="1" style="background-color: #007bff;"></li>
+                                    <li data-target="#introCarousel" data-slide-to="2" style="background-color: #007bff;"></li>
+                                    <li data-target="#introCarousel" data-slide-to="3" style="background-color: #007bff;"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" style="text-align: center;">
+                                        <div class="carousel-container" style="padding: 40px;">
+                                            <div class="carousel-content">
+                                                <h5 style="font-size: 1.25rem; color: #343a40;">Audit and Co-ordination</h5>
+                                                <a href="{% url 'core:contact' %}" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; color: #fff; padding: 10px 20px; text-decoration: none;">
+                                                    Contact Us Today
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" style="text-align: center;">
+                                        <div class="carousel-container" style="padding: 40px;">
+                                            <div class="carousel-content">
+                                                <h5 style="font-size: 1.25rem; color: #343a40;">Book Keeping</h5>
+                                                <a href="{% url 'core:contact' %}" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; color: #fff; padding: 10px 20px; text-decoration: none;">
+                                                    Contact Us Today
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" style="text-align: center;">
+                                        <div class="carousel-container" style="padding: 40px;">
+                                            <div class="carousel-content">
+                                                <h5 style="font-size: 1.25rem; color: #343a40;">External Audit</h5>
+                                                <a href="{% url 'core:contact' %}" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; color: #fff; padding: 10px 20px; text-decoration: none;">
+                                                    Contact Us Today
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" style="text-align: center;">
+                                        <div class="carousel-container" style="padding: 40px;">
+                                            <div class="carousel-content">
+                                                <h5 style="font-size: 1.25rem; color: #343a40;">Internal Audit</h5>
+                                                <a href="{% url 'core:contact' %}" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff; color: #fff; padding: 10px 20px; text-decoration: none;">
+                                                    Contact Us Today
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev" style="filter: invert(100%);">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next" style="filter: invert(100%);">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    </div>
+  </section>
+</main>
+{% endblock content %}
